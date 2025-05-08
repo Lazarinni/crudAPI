@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <script defer src="./scripts/request.js"></script> 
+</head>
+<body>
+  <h1>Requisições</h1>
+  <form id="formCadastro">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="request">Tipo de requisição:</label>
+    <select name="request" id="request">
+        <option value="create">Criar usuário</option>
+        <option value="delete">Deletar usuário</option>
+        <option value="getOne">Buscar usuário</option>
+        <option value="update">Atualizar usuário</option>
+        <option value="getAll">Listar todos os usuários</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagem"></div>
+ 
+</body>
+</html>
